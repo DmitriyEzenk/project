@@ -1,0 +1,509 @@
+@import "./_variables";
+
+.btn {
+    outline: none;
+    transition: background-color .3s ease-in-out,
+        border .3s ease-in-out;
+
+    &:focus-visible {
+        background-color: $mauve;
+        border: 2px solid $purpleHeart;
+    }
+
+    &:hover {
+        background-color: $mauve;
+        border-color: $mauve;
+    }
+
+    &:active {
+        background-color: $purpleHeart;
+        border-color: $purpleHeart;
+    }
+}
+
+.btn__empty,
+.btn__link {
+    outline: none;
+    transition: background-color .3s ease-in-out,
+        border .3s ease-in-out,
+        color .3s ease-in-out;
+
+    &:focus-visible {
+        background-color: $mauve;
+        border: 2px solid $purpleHeart;
+        color: $white;
+    }
+
+    &:hover {
+        background-color: $mediumPurple;
+        border-color: $mediumPurple;
+        color: $white;
+    }
+
+    &:active {
+        background-color: $purpleHeart;
+        border-color: $purpleHeart;
+        color: $white;
+    }
+}
+
+.link {
+    outline: none;
+    position: relative;
+    transition: color .3s ease-in-out;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: -1px;
+        left: -13px;
+        bottom: -1px;
+        right: -13px;
+        background-color: $blueChalk;
+        z-index: -1;
+        opacity: 0;
+        transition: opacity .3s ease-in-out;
+    }
+
+    &:focus-visible {
+        color: $purpleHeart;
+
+        &::after {
+            opacity: 1;
+        }
+    }
+
+    &:hover {
+        color: $mediumPurple;
+    }
+
+    &:active {
+        color: $purpleHeart;
+    }
+}
+
+.header-add__link {
+    &:focus-visible {
+        color: $purpleHeart;
+
+        &::after {
+            opacity: 0;
+        }
+    }
+}
+
+.header-nav__link {
+    outline: none;
+    position: relative;
+    transition: color .3s ease-in-out;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: -1px;
+        left: -13px;
+        bottom: -1px;
+        right: -13px;
+        background-color: $blueChalk;
+        z-index: -1;
+        opacity: 0;
+        transition: opacity .3s ease-in-out;
+    }
+
+    &:focus-visible {
+        color: $mineShaft;
+
+        &::after {
+            opacity: 1;
+        }
+    }
+
+    &:hover {
+        color: $mediumPurple;
+    }
+
+    &:active {
+        color: $purpleHeart;
+    }
+}
+
+.price__input {
+    transition: background-color .3s ease-in-out,
+        border .3s ease-in-out;
+
+    &:focus-visible {
+        border: 1px solid $mediumPurple;
+        background-color: $blueChalk;
+    }
+
+    &:hover {
+        border: 1px solid $mediumPurple;
+    }
+
+    &:active {
+        border: 1px solid $purpleHeart;
+    }
+}
+
+.price__input::-webkit-outer-spin-button,
+.price__input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.header-search {
+    .search path {
+        transition: fill .3s ease-in-out;
+    }
+
+    &--background {
+        border: transparent;
+        transition: border .3s ease-in-out,
+            background-color .3s ease-in-out;
+    }
+
+    &__input:focus-visible~.header-search--background {
+        border: 2px solid $mediumPurple;
+        background-color: $magnolia;
+    }
+
+    &__input:hover~.header-search--background {
+        background-color: $gallery;
+    }
+
+    &__input:active~.header-search--background {
+        background-color: $wildSand;
+        border: none;
+    }
+
+    &__input:active~.search path {
+        fill: $mediumPurple;
+    }
+}
+
+.header-search__btn {
+    transition: background-color .3s ease-in-out,
+        border-color .3s ease-in-out;
+
+    & svg {
+        transition: stroke .3s ease-in-out,
+    }
+
+    &:focus-visible {
+        background-color: $mauve;
+    }
+
+    &:focus-visible svg path {
+        stroke: $white;
+    }
+
+    &:hover {
+        background-color: $mediumPurple;
+    }
+
+    &:hover svg path {
+        stroke: $white;
+    }
+
+    &:active {
+        border-color: $purpleHeart;
+        background-color: $purpleHeart;
+    }
+
+    &:active svg path {
+        stroke: $white;
+    }
+}
+
+.contacts-form__input {
+    border: transparent;
+    transition: border .3s ease-in-out,
+    background-color .3s ease-in-out;
+
+    &:focus-visible {
+        border: 1px solid $mediumPurple;
+        background-color: $magnolia;
+    }
+
+    &:hover {
+        border: none;
+        background-color: $gallery;
+    }
+
+    &:active {
+        border: 1px solid #B8EC64;
+        background-color: $wildSand;
+    }
+}
+
+.phone {
+    position: relative;
+
+    &__link {
+        outline: none;
+        transition: color .3s ease-in-out;
+        
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            width: 150px;
+            background-color: #FFF5D1;
+            z-index: -1;
+            opacity: 0;
+            transition: opacity .3s ease-in-out;
+        }
+        
+        &:focus-visible {
+            &::after {
+                opacity: 1;
+            }
+        }
+        
+        &:hover {
+            color: #FFBD59;
+            
+            &~svg path{
+                fill: #FFBD59;
+                transition: fill .3s ease-in-out;
+            }
+        }
+
+        &:active {
+            color: #BB370E;
+            
+            &~svg path{
+                fill: #BB370E;
+                transition: fill .3s ease-in-out;
+            }
+        }
+    }
+}
+
+.top__link {
+    outline: none;
+    transition: color .3s ease-in-out;
+    
+    &:focus-visible {
+        &::after {
+            opacity: 1;
+        }
+        
+        &::before {
+            background-color: $mauve;
+        }
+        
+        & svg path {
+            stroke: $white;
+            transition: stroke .3s ease-in-out;
+        }   
+    }
+
+    &:hover {
+        &::after {
+            opacity: 1;
+        }
+        
+        &::before {
+            background-color: $mediumPurple;
+        }
+        
+        & svg path {
+            stroke: $white;
+            transition: stroke .3s ease-in-out;
+        }   
+    }
+
+    &:active {
+        color: $purpleHeart;
+
+        &::after {
+            background-color: $purpleHeart;
+            opacity: 1;
+        }
+        
+        &::before {
+            border-color: $purpleHeart;
+            background-color: $purpleHeart;
+        }
+        
+        & svg path {
+            stroke: $white;
+            transition: stroke .3s ease-in-out;
+        }   
+    }
+}
+
+.user,
+.cart {
+    position: relative;
+
+    & svg path{
+        transition: fill .3s ease-in-out;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: -3px;
+        left: -3px;
+        bottom: 0px;
+        right: -3px;
+        background-color: $mauve;
+        z-index: -1;
+        opacity: 0;
+        transition: opacity .3s ease-in-out;
+    }
+
+    &:focus-visible {
+        &::after {
+            opacity: 1;
+        }
+
+        & svg path {
+            fill: $white;
+        }
+    }
+
+    &:hover {
+         & svg path {
+            fill: $mauve;
+        }
+    }
+
+    &:active {
+        & svg path {
+           fill: $purpleHeart;
+       }
+   }
+}
+
+.cart {
+    &::after {
+        left: -10px;
+        right: -5px;
+    }
+}
+
+.footer__social-link {
+    position: relative;
+    z-index: 2;
+    outline: none;
+
+    & svg path {
+        transition: fill .3s ease-in-out;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        bottom: 0;
+        right: -2px;
+        background-color: $mauve;
+        z-index: -1;
+        opacity: 0;
+        transition: opacity .3s ease-in-out;
+    }
+
+    &:focus-visible {
+        &::after {
+            opacity: 1;
+        }
+
+        & svg path {
+            fill: $white;
+        }
+    }
+
+    &:hover {
+        & svg path {
+            fill: $mediumPurple;
+        }
+    }
+
+    &:active {
+        & svg path {
+            fill: $purpleHeart;
+        }
+    }
+}
+
+.header__logo {
+    outline: none;
+}
+
+.check__link,
+.view__add {
+    outline: none;
+    position: relative;
+    transition: color .3s ease-in-out;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -2px;
+        bottom: 0;
+        right: -2px;
+        background-color: $mauve;
+        z-index: -1;
+        opacity: 0;
+        transition: opacity .3s ease-in-out;
+    }
+
+    &:focus-visible {
+        &::after {
+            opacity: 1;
+        }
+        color: $white;
+    }
+
+    &:hover {
+        color: $mauve;
+    }
+
+    &:active {
+        color: $purpleHeart;
+    }
+}
+
+.footer__link {
+    outline: none;
+}
+
+.header__logo {
+    width: 187px;
+}
+
+.logo {
+    position: relative;
+    z-index: 2;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: $mauve;
+        z-index: 0;
+        opacity: 0;
+        transition: opacity .3s ease-in-out;
+    }
+
+    &:focus-visible {
+        &::after {
+            opacity: .4;
+        }
+    }
+
+
+}
+
+
+    

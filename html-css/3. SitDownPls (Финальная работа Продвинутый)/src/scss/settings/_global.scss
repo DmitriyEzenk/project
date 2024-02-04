@@ -1,0 +1,96 @@
+@import "_fonts.scss";
+@import "_variables.scss";
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "OpenSans", sans-serif;
+    font-weight: 400;
+    color: $mineShaft;
+    font-size: 14px;
+    line-height: 14px;
+}
+
+.container {
+    max-width: 1340px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+}
+
+.flex {
+    display: flex;
+}
+
+.btn--reset {
+    display: block;
+    font-size: 16px;
+    border-radius: 10px;
+    background-color: transparent;
+    font-weight: 600;
+}
+
+.btn {
+    background-color: $mediumPurple;
+    border: 2px solid $mediumPurple;
+    color: $white;
+    padding: 17px 55px 17px 48px;
+}
+
+.btn__empty {
+    padding: 14px 35px;
+    color: $mediumPurple;
+    border: 2px solid $mediumPurple;
+}
+
+.btn__link {
+    border: 2px solid $mediumPurple;
+    width: 132px;
+    border-radius: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    background-color: transparent;
+    font-weight: 600;
+    font-weight: 600;
+    display: block;
+    padding: 18px 35px;
+    color: $mediumPurple;
+    border: 2px solid $mediumPurple;
+    min-height: 54px;
+    white-space: nowrap;
+}
+
+.price {
+    display: block;
+}
+
+.title {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 32px;
+    color: $mineShaft;
+    margin-bottom: 27px;
+}
+
+.descr {
+    max-width: 229px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 31px;
+    color: $mineShaft;
+}
+
+.table__title {
+    display: none;
+}

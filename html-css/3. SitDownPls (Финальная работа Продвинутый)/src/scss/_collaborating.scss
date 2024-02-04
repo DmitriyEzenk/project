@@ -1,0 +1,141 @@
+@import "./settings/_variables";
+
+.header {
+  &-add__wrapper {
+    margin-bottom: 21px;
+    margin-top: 24px;
+  }
+
+  &-add {
+    &__wrapper {
+      margin-bottom: 2px;
+    }
+
+    &__link {
+      color: $dustyGray;
+    }
+
+    &__span {
+      cursor: context-menu;
+      color: $purpleHeart;
+    }
+  }
+}
+
+.collaborating {
+  &__main-title {
+    margin-bottom: 32px;
+  }
+
+  &__title {
+    color: $mineShaft;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    margin-bottom: 12px;
+  }
+
+  &__descr {
+    font-size: 16px;
+    line-height: 29px;
+    color: $doveGrey;
+    max-width: 842px;
+  }
+}
+
+.suppliers {
+  margin-bottom: 32px;
+}
+
+.prospects {
+  margin-bottom: 32px;
+
+  &__list {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  &__item {
+    font-size: 16px;
+    line-height: 24px;
+    color: $doveGrey;
+    max-width: 624px;
+    padding-left: 37px;
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: 25px;
+
+    &--one {
+      background-image: url(../img/prospects-one.svg);
+    }
+
+    &--two {
+      background-image: url(../img/prospects-two.svg);
+    }
+
+    &--three {
+      background-image: url(../img/prospects-three.svg);
+    }
+  }
+}
+
+.advantage {
+  margin-bottom: 32px;
+
+  &__list {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  &__span {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    color: $crusta;
+    margin-bottom: 12px;
+  }
+}
+
+.guarantees {
+  margin-bottom: 32px;
+
+  &__list {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  &__item {
+    position: relative;
+    padding-left: 26px;
+    font-size: 16px;
+    line-height: 29px;
+    max-width: 816px;
+  }
+
+  &__span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 29px;
+    color: $crusta;
+  }
+}
+
+.term {
+  margin-bottom: 70px;
+
+  &__title {
+    padding: 22px 0 22px 109px;
+    font-size: 24px;
+    line-height: 36px;
+    max-width: 624px;
+
+    background-image: url(../img/pen.png);
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: 77px 116px;
+  }
+}

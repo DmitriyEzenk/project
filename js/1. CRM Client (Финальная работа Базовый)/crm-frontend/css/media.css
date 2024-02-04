@@ -1,0 +1,66 @@
+@media (max-width: 1400px) {
+  .container {
+    padding: 0;
+  }
+
+  .main__body {
+    padding: 130px 20px 20px;
+  }
+
+  .col-three,
+  .col-four {
+    min-width: 140px;
+  }
+
+  .col-five {
+    width: 110px;
+  }
+
+  .table>:not(caption)>*>* {
+    padding: 20px 10px;
+  }
+
+  .table>:not(caption)>*>.col {
+    padding: 8px 10px;
+  }
+}
+
+@media (max-width: 900px) {
+  .body {
+    overflow-x: auto;  
+  }
+
+  .col-three,
+  .col-four {
+    min-width: 100px;
+  }
+}
+
+@media (max-width: 500px) {
+  .modal__wrapper {
+    padding: 24px 15px;
+    max-width: 300px;
+  }
+
+  .add-contact {
+    width: 300px;
+    transform: translateX(-15px);
+  }
+
+  .choices__list.choices__list--single {
+    padding: 8px 8px 0;
+  }
+
+  .add-contact__list {
+    padding: 24px 8px 8px;
+  }
+
+  .contact__input {
+    width: 160px;
+    border: 1px solid #b0b0b0;
+  }
+
+  .cancel__btn {
+    display: none;
+  }
+} 

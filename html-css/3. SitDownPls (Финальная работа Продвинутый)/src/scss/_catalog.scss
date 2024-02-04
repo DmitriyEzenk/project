@@ -1,0 +1,197 @@
+@import "./settings/_variables";
+
+.catalog {
+    &__header-add {
+        margin-top: 19px;
+        margin-bottom: 4px;
+    }
+
+    &__wrapper {
+        position: relative;
+        gap: 32px;
+    }
+
+    .sofa {
+        flex-direction: column;
+        width: 100%;
+        background-color: $white;
+        margin-bottom: 70px;
+
+        &-list {
+            margin-bottom: 32px;
+        }
+
+        &__box {
+            align-self: center;
+            gap: 17px;
+        }
+
+        &__btn {
+            padding: 3px 11px;
+            
+            &--active {
+                border-color: $purpleHeart;
+                background-color: $purpleHeart;
+                color: $white;
+            }
+
+            &--table {
+                display: none;
+            }
+        }
+
+
+    }
+
+    &__title {
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 23px;
+    }
+
+    &__text {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    &-new {
+        background-color: $mineShaft;
+        border-radius: 10px;
+        min-height: 360px;
+        bottom: 134px;
+        left: 0;
+        position: absolute;
+    
+        &__content {
+            max-width: 290px;
+            padding: 30px 30px 64px;
+        }
+    
+        &__title {
+            font-family: "Playfair", serif;
+            font-size: 22px;
+            line-height: 32px;
+            letter-spacing: .08rem;
+            color: $straw;
+        }
+    
+        &__text {
+            font-size: 16px;
+            line-height: 22px;
+            color: $dustyGray;
+        }
+    } 
+}
+
+.filter{
+    min-width: 296px;
+    flex-direction: column;
+
+    &__text {
+        color: $mineShaft;
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 22px;
+    }
+
+    &__span {
+        color: $doveGrey;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 21px;
+        margin-bottom: 9px;
+    }
+
+    &__color {
+        flex-direction: column;
+        margin-bottom: 27px;
+        min-width: 146px;
+    }
+
+    &__list {
+        flex-direction: column;
+        gap: 11px;
+    }
+
+    &__categories {
+        flex-direction: column;
+        margin-bottom: 27px;
+        min-width: 146px;
+    }
+
+    .check {
+        gap: 8px;
+
+        &__input {
+            opacity: 0;
+            position: absolute;
+            z-index: -1;
+
+            +.check__label {
+                position: relative;
+                padding-left: 33px;
+                font-size: 16px;
+                line-height: 21px;
+                color: $doveGrey;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    width: 20px;
+                    height: 20px;
+                    border: 1px solid $dustyGray;
+                    border-radius: 1px;
+                    opacity: 1;
+                    z-index: 1;
+                }
+            }
+        }
+
+        &__input:checked {
+            +.check__label {
+
+                &::after {
+                    background-image: url(../img/check.svg);
+                    background-color: $mediumPurple;
+                    border: 1px solid $mediumPurple;
+                    background-position: center;
+                    background-size: contain;
+                }
+            }
+        }
+    }
+
+    .price {
+        min-width: 296px;
+        flex-direction: column;
+
+        &__span {
+            margin-bottom: 4px;
+        }
+
+        &__list {
+            padding-top: 5px;
+            gap: 10px;
+        }
+
+        &__item {
+            align-items: center;
+            gap: 10px;
+        }
+
+        &__span {
+            font-size: 16px;
+            color: $doveGrey;
+        }
+
+        &__input {
+            border: 1px solid $dustyGray;
+            width: 86px;
+            height: 30px;
+            padding: 4px 13px;
+            font-size: 16px;
+            color: $doveGrey;
+        }
+    }
+}
