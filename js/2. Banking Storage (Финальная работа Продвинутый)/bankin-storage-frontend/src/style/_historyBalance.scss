@@ -1,0 +1,39 @@
+.history-balance {
+  &__title {
+    font-family: "WorkSans", sans-serif;
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 25px;
+  }
+
+  &__top {
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+
+  &__btn {
+    background-color: $denim;
+    color: $white;
+    font-weight: 500;
+    padding: 16px 24px;
+    border-radius: 7px;
+    outline: none;
+    transition: opacity .3s ease-in-out;
+    gap: 10px;
+    user-select: none;
+
+    &:focus-visible,
+    &:hover {
+      opacity: .7;
+    }
+  }
+}
+
+.history-graphic,
+.transaction-ratio {
+  position: relative;
+  padding: 25px 100px 20px;
+  height: 288px;
+  margin-bottom: 50px;
+}
+

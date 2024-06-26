@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coin.</title>
+  <link rel="icon" href="./image/coin.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
+</head>
+
+<body>
+  <div class="spinner__wrapper">
+    <div class="spinner spinner-loading" id="spinner"></div>
+  </div>
+  <div class="main__page" style="display: none;">
+    <div class="popUp"></div>
+    <header class="header header__account">
+      <div class="container header__wrapper flex">
+        <a href="/" class="header__logo">
+          <img src="./image/logo.svg" alt="Логотип Coin">
+        </a>
+        <nav class="nav"></nav>
+      </div>
+    </header>
+    <section class="account">
+      <div class="container">
+        <div class="account__top flex">
+          <h2 class="account__title title">Ваши счета</h2>
+          <select class="account__select" name="account" id="account">
+            <option value="Сортировка">Сортировка</option>
+            <option value="По номеру">По номеру</option>
+            <option value="По балансу">По балансу</option>
+            <option value="По последней транзакции">По последней транзакции</option>
+          </select>
+          <button class="account__new btn flex" id="account__new">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 4.00001L12 12M12 12L12 20M12 12L20 12M12 12L4 12" stroke="white" stroke-width="2" />
+            </svg>
+            Создать новый счёт
+          </button>
+        </div>
+        <div class="account__bottom">
+          <ul class="account__list list--reset flex" id="account__list">
+          </ul>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+</body>
+
+</html>

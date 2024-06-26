@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coin.</title>
+  <link rel="icon" href="./image/coin.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=94d726d4-e670-428e-ae2e-d21bf09fe2d8"
+    type="text/javascript"></script>
+</head>
+
+<body>
+  <div class="spinner__wrapper">
+    <div class="spinner spinner-loading" id="spinner"></div>
+  </div>
+  <div class="main__page" style="display: none;">
+    <div class="popUp"></div>
+    <header class="header header__account">
+      <div class="container header__wrapper flex">
+        <a href="/" class="header__logo">
+          <img src="./image/logo.svg" alt="Логотип Coin">
+        </a>
+        <nav class="nav"></nav>
+      </div>
+    </header>
+    <section class="map">
+      <div class="container">
+        <h2 class="common__title title">Карта банкоматов</h2>
+        <div id="map"></div>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>
